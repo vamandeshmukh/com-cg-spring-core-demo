@@ -5,6 +5,8 @@
 
 	<!-- Dependency injection -->
 
+	<!-- Property Injection / Setter Injection -->
+
 	<bean id="employee" class="com.cg.spring.core.demo.model.Employee">
 		<property name="eid">
 			<value>101</value>
@@ -30,5 +32,12 @@
 		</property>
 	</bean>
 
+	<!-- Constructor injection -->
+
+	<bean id="emp3" class="com.cg.spring.core.demo.model.Employee">
+		<constructor-arg value="103" type="int"></constructor-arg>
+		<constructor-arg value="Tonu" type="java.lang.String"></constructor-arg>
+		<constructor-arg value="12.5" type="double"></constructor-arg>
+	</bean>
 
 </beans>

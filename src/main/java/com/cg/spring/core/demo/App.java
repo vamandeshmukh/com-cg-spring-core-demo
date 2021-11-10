@@ -12,6 +12,8 @@ import com.cg.spring.core.demo.model.Employee;
  *
  */
 
+// XML based configuration 
+
 public class App {
 
 	public static void main(String[] args) {
@@ -29,6 +31,9 @@ public class App {
 
 		Employee emp2 = ctx.getBean("employee2", Employee.class);
 		System.out.println(emp2.toString());
+
+		Employee emp3 = ctx.getBean("emp3", Employee.class);
+		System.out.println(emp3.toString());
 
 		((AbstractApplicationContext) ctx).close();
 
