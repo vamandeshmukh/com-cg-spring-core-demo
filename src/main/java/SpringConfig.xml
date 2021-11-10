@@ -5,8 +5,6 @@
 
 	<!-- Dependency injection -->
 
-	<!-- Property injection / setter injection -->
-
 	<bean id="employee" class="com.cg.spring.core.demo.model.Employee">
 		<property name="eid">
 			<value>101</value>
@@ -18,5 +16,19 @@
 			<value>10.6</value>
 		</property>
 	</bean>
+
+	<bean id="employee2"
+		class="com.cg.spring.core.demo.model.Employee">
+		<property name="eid">
+			<value>102</value>
+		</property>
+		<property name="firstName">
+			<value>Monu</value>
+		</property>
+		<property name="salary">
+			<value>15.5</value>
+		</property>
+	</bean>
+
 
 </beans>

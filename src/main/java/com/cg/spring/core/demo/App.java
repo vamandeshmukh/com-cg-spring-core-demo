@@ -22,9 +22,13 @@ public class App {
 
 //		Employee emp = new Employee(101, "Sonu", 10.6);
 
-		Employee emp = ctx.getBean(Employee.class);
+//		Employee emp = ctx.getBean(Employee.class);
 
+		Employee emp = ctx.getBean("employee", Employee.class);
 		System.out.println(emp.toString());
+
+		Employee emp2 = ctx.getBean("employee2", Employee.class);
+		System.out.println(emp2.toString());
 
 		((AbstractApplicationContext) ctx).close();
 
