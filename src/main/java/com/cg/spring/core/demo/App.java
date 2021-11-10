@@ -35,6 +35,9 @@ public class App {
 		Employee emp3 = ctx.getBean("emp3", Employee.class);
 		System.out.println(emp3.toString());
 
+		Employee emp4 = ctx.getBean("emp4", Employee.class);
+		System.out.println(emp4.toString());
+
 		((AbstractApplicationContext) ctx).close();
 
 		System.out.println("End");

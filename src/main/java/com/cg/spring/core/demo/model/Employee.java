@@ -5,6 +5,7 @@ public class Employee {
 	private int eid;
 	private String firstName;
 	private double salary;
+	private Department department;
 
 	public Employee() {
 		super();
@@ -15,6 +16,14 @@ public class Employee {
 		this.eid = eid;
 		this.firstName = firstName;
 		this.salary = salary;
+	}
+
+	public Employee(int eid, String firstName, double salary, Department department) {
+		super();
+		this.eid = eid;
+		this.firstName = firstName;
+		this.salary = salary;
+		this.department = department;
 	}
 
 	public int getEid() {
@@ -41,8 +50,23 @@ public class Employee {
 		this.salary = salary;
 	}
 
+	public Department getDepartment() {
+		return department;
+	}
+
+	public void setDepartment(Department department) {
+		this.department = department;
+	}
+
+//	@Override
+//	public String toString() {
+//		return "Employee [eid=" + eid + ", firstName=" + firstName + ", salary=" + salary + "]";
+//	}
+
 	@Override
 	public String toString() {
-		return "Employee [eid=" + eid + ", firstName=" + firstName + ", salary=" + salary + "]";
+		return "Employee [eid=" + eid + ", firstName=" + firstName + ", salary=" + salary + ", department=" + department
+				+ "]";
 	}
+
 }
