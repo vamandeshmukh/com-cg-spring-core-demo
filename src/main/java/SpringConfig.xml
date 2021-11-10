@@ -11,7 +11,7 @@
 		<property name="eid">
 			<value>101</value>
 		</property>
-		<property name="ename">
+		<property name="firstName">
 			<value>Sonu</value>
 		</property>
 		<property name="salary">

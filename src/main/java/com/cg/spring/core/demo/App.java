@@ -17,7 +17,7 @@ public class App {
 
 		System.out.println("Start");
 
-		ApplicationContext ctx = new ClassPathXmlApplicationContext();
+		ApplicationContext ctx = new ClassPathXmlApplicationContext("SpringConfig.xml");
 
 //		Employee emp = new Employee(101, "Sonu", 10.6);
 
