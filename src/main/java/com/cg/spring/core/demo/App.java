@@ -1,6 +1,7 @@
 package com.cg.spring.core.demo;
 
 import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.AbstractApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import com.cg.spring.core.demo.model.Employee;
@@ -25,6 +26,9 @@ public class App {
 
 		System.out.println(emp.toString());
 
+		((AbstractApplicationContext) ctx).close();
+
 		System.out.println("End");
+
 	}
 }
