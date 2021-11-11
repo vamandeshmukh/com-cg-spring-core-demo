@@ -81,4 +81,40 @@
 		</property>
 	</bean>
 
+	<!-- Inheritance in beans -->
+
+	<bean id="emp5" class="com.cg.spring.core.demo.model.Employee">
+		<property name="eid">
+			<value>105</value>
+		</property>
+		<property name="firstName">
+			<value>Gonu</value>
+		</property>
+	</bean>
+
+	<bean id="emp6" parent="emp5">
+		<property name="firstName">
+			<value>Ponu</value>
+		</property>
+		<property name="salary">
+			<value>45.5</value>
+		</property>
+	</bean>
+
+	<!-- Autowiring -->
+
+	<bean id="emp7" class="com.cg.spring.core.demo.model.Employee"
+		autowire="constructor">
+		<constructor-arg type="int">
+			<value>107</value>
+		</constructor-arg>
+		<constructor-arg type="java.lang.String">
+			<value>Sonu</value>
+		</constructor-arg>
+		<constructor-arg type="double">
+			<value>10.5</value>
+		</constructor-arg>
+	</bean>
+
+
 </beans>

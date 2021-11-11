@@ -26,17 +26,27 @@ public class App {
 
 //		Employee emp = ctx.getBean(Employee.class);
 
-		Employee emp = ctx.getBean("employee", Employee.class);
-		System.out.println(emp.toString());
+//		Employee emp = ctx.getBean("employee", Employee.class);
+//		System.out.println(emp.toString());
+//
+//		Employee emp2 = ctx.getBean("employee2", Employee.class);
+//		System.out.println(emp2.toString());
+//
+//		Employee emp3 = ctx.getBean("emp3", Employee.class);
+//		System.out.println(emp3.toString());
+//
+//		Employee emp4 = ctx.getBean("emp4", Employee.class);
+//		System.out.println(emp4.toString());
+//
+//		Employee emp5 = ctx.getBean("emp5", Employee.class);
+//		System.out.println(emp5.toString());
+//
+//		Employee emp6 = ctx.getBean("emp6", Employee.class);
+//		System.out.println(emp6.toString());
+//		emp6.work();
 
-		Employee emp2 = ctx.getBean("employee2", Employee.class);
-		System.out.println(emp2.toString());
-
-		Employee emp3 = ctx.getBean("emp3", Employee.class);
-		System.out.println(emp3.toString());
-
-		Employee emp4 = ctx.getBean("emp4", Employee.class);
-		System.out.println(emp4.toString());
+		Employee emp7 = ctx.getBean("emp7", Employee.class);
+		System.out.println(emp7.toString());
 
 		((AbstractApplicationContext) ctx).close();
 

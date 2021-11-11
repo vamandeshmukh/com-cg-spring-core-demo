@@ -1,6 +1,12 @@
 package com.cg.spring.core.demo.model;
 
-public class Employee {
+interface EmployeeInterface {
+
+	public abstract void work();
+
+}
+
+public class Employee implements EmployeeInterface {
 
 	private int eid;
 	private String firstName;
@@ -67,6 +73,12 @@ public class Employee {
 	public String toString() {
 		return "Employee [eid=" + eid + ", firstName=" + firstName + ", salary=" + salary + ", department=" + department
 				+ "]";
+	}
+
+	@Override
+	public void work() {
+		System.out.println("Employee works...");
+
 	}
 
 }
